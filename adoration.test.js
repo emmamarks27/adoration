@@ -19,6 +19,6 @@ describe('showHowMuchILoveYou', () => {
   it('Throws an error when passed a string', () => {
     expect(() => {
       showHowMuchILoveYou('with all my heart');
-    }).toThrow("I'm really sorry; you're just not my type");
+    }).toThrow(new Error("I'm really sorry; you're just not my type."));
   });
 });
